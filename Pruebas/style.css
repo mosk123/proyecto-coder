@@ -1,0 +1,155 @@
+*{
+    padding: 0px; 
+    margin: 0px;
+    box-sizing: border-box
+}
+html{
+    font-size: 62.5%;} /*----1rem = 10px*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    background-color:rgb(39, 38, 38);
+}
+/*----------Index-----------*/
+
+#index{
+    display: grid;
+    grid-template-rows: 10rem 73.5rem 10rem ;
+    grid-template-columns: 10% auto auto auto ;
+    margin: 0;
+}
+
+/*----------HEADER-NAV-------------*/
+
+.header__nav{
+     text-align: end;
+     margin-top: 3rem;
+}
+
+.header__nav li{
+    display: inline-block;
+    padding: 1rem;
+    padding-right: 1.7rem;
+
+
+
+
+}
+
+.header__nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0,5rem;
+    align-content: center;
+
+}
+
+nav{
+     background-color: rgb(39, 38, 38);
+     grid-column-start: 2;
+     grid-column-end: 6;
+
+}
+
+header{
+    background-color: rgb(39, 38, 38);
+
+}
+
+.header img{
+        width: 110%;
+        height: 120%;
+
+}
+
+/*---------SECTION-------*/
+
+section{
+    background-color: tomato;
+    grid-column: span 5;
+}
+
+.section__img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------FOOTER-------*/
+
+.general{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color:rgb(39, 38, 38);
+    grid-column: span 5;
+}
+
+footer p{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.divisorFinal{
+    padding-left: 1rem;
+
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20rem;
+    
+}
+
+.social p{
+    padding-right: 1.5rem;
+}
+
+.social i{
+    font-size: 30px;
+    color: rgb(40, 40, 105);
+    padding: 8px;
+}
+
+.derechos{
+    font-size: 1.3em;
+}
+
+/*--------ANIMACION_____*/
+
+.boton1:hover{
+    transform: scale(1.7 ,1.5);
+}
+
+.boton2:hover{
+    transform: scale(1.7 ,1.5);
+}
+
+/*------MOBILE------*/
+
+@media only screen and (max-width:599px) {
+    
+    
+#index{
+    display: grid;
+    grid-template-columns: 9rem;
+    grid-template-rows: 15% auto auto auto auto auto;
+}
+
+.header__nav li a{
+    font-size: 1.2rem;
+
+}
+
+}

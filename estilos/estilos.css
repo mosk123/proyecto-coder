@@ -1,0 +1,557 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+} /*----1rem = 10px*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap");
+
+/*-----------HEADER---------*/
+.header {
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  border-bottom: solid #5f5f5f 0.1rem;
+}
+
+.header img {
+  width: 11rem;
+  height: 10rem;
+}
+
+.divLogo {
+  width: 30rem;
+  height: auto;
+}
+
+.divLogo img {
+  width: 90%;
+  padding-left: 9%;
+  margin-top: 1.5rem;
+  z-index: 3;
+}
+
+/*----------NAV-------------*/
+
+.header__nav {
+  padding: 4rem;
+  display: flex;
+  margin-top: 1%;
+}
+.header__nav li {
+  display: inline-block;
+}
+.header__nav a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 0.1rem;
+  transition: background-size 0.3s;
+}
+
+/*--------ANIMACION/NAV-------*/
+a:hover,
+a:focus {
+  background-size: 100% 0.1rem;
+}
+
+/*--------CONTENIDO---------*/
+
+.main {
+  background-image: url(/imagenes/IMG_001.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center center;
+  width: 100%;
+  height: 90rem;
+  display: grid;
+  grid-template-rows: 1rem;
+  align-content: space-evenly;
+}
+
+.mainNosotros {
+  background-color: hsl(300, 1%, 33%);
+  width: 100%;
+  height: auto;
+}
+
+.seccionLeyenda h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3.5rem;
+  padding-left: 6rem;
+  margin-top: 4rem;
+  margin-right: 50%;
+  grid-row: end;
+}
+
+.seccionBoton {
+  padding-left: 10rem;
+  margin: 3rem;
+}
+
+.seccionBoton button {
+  padding: 1rem 4rem 1rem 4rem;
+  background-color: rgb(77, 153, 224);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 1rem;
+  grid-row: start;
+}
+/*--------ANIMACION/BTN-----*/
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+/*-----FORMULARIO------*/
+
+.formulario {
+  margin: 2rem;
+  padding: 5rem;
+ 
+}
+
+.seccion {
+  background-color: hsl(300, 1%, 33%);
+  z-index: -1;
+  width: 100%;
+
+}
+
+
+.seccion legend {
+  margin: 1rem;
+  width: 2rem;
+  height: 4rem;
+}
+
+.seccion legend,
+label {
+  color: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 200px;
+}
+
+.texto {
+  font-size: 1.2rem;
+  color: #f8f8f8;
+}
+input[type="text"] {
+  width: 99%;
+  padding: 1.3rem;
+  margin: 0.3rem;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  width: 99%;
+  padding: 1.3rem;
+  margin: 0.3rem;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: rgb(39, 38, 38);
+  color: white;
+  padding: 1.3rem;
+  text-decoration: none;
+  margin: 0.2rem;
+  width: 99.7%;
+
+}
+
+textarea {
+  width: 99%;
+  height: 12rem;
+  padding: 3rem;
+  margin: 0.3rem;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.contenedorFormulario {
+  display: flex;
+
+}
+
+.asideInfo {
+  background-color: rgb(231, 227, 231);
+  border-left-style: double;
+  border-color: #5f5f5f;
+  width: 50%;
+
+
+}
+
+.asideInfo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2.1rem;
+  text-align: center;
+  padding-top: 15rem;
+  text-transform: uppercase;
+  color: #645f5f;
+}
+
+.asideInfo h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-top: 5rem;
+  color: #645f5f;
+  text-align: center;
+}
+
+/*-------PRODUCTOS--------*/
+
+.mainProductos {
+  background-color: hsl(300, 1%, 33%);
+  width: 100%;
+  height: 90rem;
+}
+
+.contenedorGaleria {
+  text-align: center;
+  padding: 7.7rem;
+}
+
+.contenedorGaleria h2 {
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(77, 153, 224);
+  padding: 1rem;
+}
+
+.imagenGaleria {
+  width: 100%;
+  height: 34rem;
+}
+
+.imagenGaleria:hover {
+  filter: sepia(60%);
+}
+
+.gridImagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "fotoUno fotoDos fotoTres"
+    "fotoCuatro fotoCinco fotoSeis";
+}
+
+.fotoUno {
+  grid-area: fotoUno;
+  padding: 0.4rem;
+}
+
+.fotoDos {
+  grid-area: fotoDos;
+  padding: 0.4rem;
+}
+
+.fotoTres {
+  grid-area: fotoTres;
+  padding: 0.4rem;
+}
+
+.fotoCuatro {
+  grid-area: fotoCuatro;
+  padding: 0.4rem;
+}
+
+.fotoCinco {
+  grid-area: fotoCinco;
+  padding: 0.4rem;
+}
+
+.fotoSeis {
+  grid-area: fotoSeis;
+  padding: 0.4rem;
+}
+
+/*--------NOSOTROS------*/
+
+.mainNosotros{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "texto1 foto1"
+  "foto2 texto2";
+
+}
+
+.textoNosotros1{
+  width: 60%;
+  height: 50%;
+}
+
+
+.textoNosotros1 p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-top: 13rem;
+  padding-left: 17rem;
+}
+
+.fotoNosotros1{
+  width: 100%;
+  height: 100%;
+}
+
+.fotoNosotros1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.textoNosotros2{
+  width: 60%;
+  height: 50%;
+}
+
+.textoNosotros2 p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-top: 13rem;
+  padding-left: 25rem;
+}
+
+.fotoNosotros2{
+  width: 100%;
+  height: 100%;
+}
+
+.fotoNosotros2 img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*--------FOOTER-------*/
+
+footer {
+  background-color: rgb(39, 38, 38);
+  width: 100%;
+  border-top: solid #5f5f5f 0.1rem;
+}
+
+footer div p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.general {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.divisorFinal {
+  padding-left: 1rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 20rem;
+}
+.social i {
+  font-size: 30px;
+  color: rgb(77, 153, 224);
+  padding: 8px;
+}
+
+.social p {
+  padding-right: 1.5rem;
+}
+
+.derechos {
+  text-transform: lowercase;
+}
+
+/*--------ANIMACION_____*/
+
+.boton1:hover {
+  transform: scale(1.7, 1.5);
+}
+
+.boton2:hover {
+  transform: scale(1.7, 1.5);
+}
+
+.menu[data-animation="to-left"] a::before {
+  transform-origin: right;
+}
+
+button {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+button:hover,
+button:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.btn {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+/*------MOBILE------*/
+
+@media only screen and (max-width: 599px) {
+  #index {
+    display: grid;
+    grid-template-columns: 9rem;
+    grid-template-rows: 15% auto auto auto auto auto;
+  }
+
+  .header__nav li a {
+    font-size: 1.2rem;
+  }
+
+  .seccionLeyenda h2 {
+    display: none;
+  }
+
+  .seccionBoton {
+    padding-left: 18rem;
+    margin: 3rem;
+    padding-bottom: 10rem;
+  }
+
+  .mainProductos{
+    height: 100%;
+  }
+
+  .gridImagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "fotoUno"
+      "fotoDos"
+      "fotoTres"
+      "fotoCuatro"
+      "fotoCinco"
+      "fotoSeis";
+  }
+
+  .asideInfo{
+    display: none;
+  }
+
+  .mainNosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    "texto1" 
+    "foto1"
+    "foto2" 
+    "texto2";
+}
+}
+
+/*------TABLET------*/
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  
+  .mainProductos{
+    height: 100%;
+  }
+
+  .gridImagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "fotoUno fotoDos"
+      "fotoTres fotoCuatro"
+      "fotoCinco fotoSeis";
+  }
+
+  .mainNosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    "texto1" 
+    "foto1"
+    "foto2" 
+    "texto2";
+  }
+}
