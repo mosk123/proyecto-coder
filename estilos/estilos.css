@@ -70,7 +70,7 @@ a:focus {
 /*--------CONTENIDO---------*/
 
 .main {
-  background-image: url(./imagenes/IMG_001.JPG);
+  background-image: url(../imagenes/IMG_001.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center center;
