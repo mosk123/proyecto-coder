@@ -114,7 +114,7 @@ a:focus {
   margin: 3rem;
 }
 
-.seccionBoton button {
+.seccionBoton button{
   padding: 1rem 4rem 1rem 4rem;
   background-color: rgb(77, 153, 224);
   font-family: "Montserrat", sans-serif;
@@ -374,13 +374,13 @@ textarea {
 
 /*--------FOOTER-------*/
 
-footer {
+footer{
   background-color: rgb(39, 38, 38);
   width: 100%;
   border-top: solid #5f5f5f 0.1rem;
 }
 
-footer div p {
+footer div p{
   color: white;
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
@@ -388,7 +388,7 @@ footer div p {
   text-transform: uppercase;
 }
 
-.general {
+.general{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -396,27 +396,27 @@ footer div p {
   padding: 2rem;
 }
 
-.divisorFinal {
+.divisorFinal{
   padding-left: 1rem;
 }
 
-.social {
+.social{
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-right: 20rem;
 }
-.social i {
+.social i{
   font-size: 30px;
   color: rgb(77, 153, 224);
   padding: 8px;
 }
 
-.social p {
+.social p{
   padding-right: 1.5rem;
 }
 
-.derechos {
+.derechos{
   text-transform: lowercase;
 }
 
@@ -431,11 +431,11 @@ footer div p {
     grid-template-rows: 15% auto auto auto auto auto;
   }
 
-  .header__nav li a {
+  .header__nav li a{
     font-size: 1.2rem;
   }
 
-  .seccionLeyenda h2 {
+  .seccionLeyenda h2{
     display: none;
   }
 
@@ -486,7 +486,7 @@ footer div p {
     height: 100%;
   }
 
-  .gridImagenes {
+  .gridImagenes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -506,13 +506,13 @@ footer div p {
     "foto2" 
     "texto2";
   }
-  /*--------ANIMACION_____*/
+/*--------ANIMACION_____*/
 
-.boton1:hover {
+.boton1:hover{
   transform: scale(1.7, 1.5);
 }
 
-.boton2:hover {
+.boton2:hover{
   transform: scale(1.7, 1.5);
 }
 
@@ -520,7 +520,7 @@ footer div p {
   transform-origin: right;
 }
 
-button {
+button{
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -550,19 +550,20 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus{
   color: #fff;
   outline: 0;
 }
 
-.btn {
+.btn{
   border-color: #3498db;
   color: #fff;
   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
-.btn:hover {
+.btn:hover{
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
+
 }
