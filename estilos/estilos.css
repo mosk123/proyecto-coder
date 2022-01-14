@@ -61,11 +61,7 @@ html {
   transition: background-size 0.3s;
 }
 
-/*--------ANIMACION/NAV-------*/
-a:hover,
-a:focus {
-  background-size: 100% 0.1rem;
-}
+
 
 /*--------CONTENIDO---------*/
 
